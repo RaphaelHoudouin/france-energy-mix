@@ -12,8 +12,8 @@ The study utilizes datasets at the regional, departmental, and commune levels. I
 The data for this analysis was retrieved on **December 10, 2024**.
 
 ## Project Structure
-- **notebooks/ENG/**: Includes notebooks for the English version of the analysis.
-- **notebooks/FR/**: Contains the French version of the analysis and other related resources.
+- **Vizualisations/ENG/**: Includes notebooks for the English version of the analysis.
+- **Vizualisations/FR/**: Contains the French version of the analysis and other related resources.
 - **data/**: Stores the data files (e.g., CSV files, datasets).
 - **models/ENG**: Includes trained machine learning models notebooks for the English version
 - **models/FR**: Includes trained machine learning models notebooks for the French version
