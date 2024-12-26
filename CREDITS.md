@@ -4,7 +4,7 @@
 Electricity Production and Consumption Analysis in France.
 
 ## Project Author
-- Developed by: **rhoudouin** (GitHub:[(https://github.com/rhoudouin)]
+- Developed by: **rhoudouin** (GitHub: https://github.com/rhoudouin).
 
 ## Data Sources
 - **Electricity Production and Consumption  Data**: éCO2mix Régional Consolidé et Définitif dataset.
