@@ -12,11 +12,9 @@ The study utilizes datasets at the regional, departmental, and commune levels. I
 The data for this analysis was retrieved on **December 10, 2024**.
 
 ## Project Structure
-- **vizualisations/ENG/**: Includes notebooks for the English version of the analysis.
-- **vizualisations/FR/**: Contains the French version of the analysis and other related resources.
+- **vizualisations/**: Includes notebooks of the data vizualisations.
 - **data/**: Stores the data files (e.g., CSV files, datasets).
-- **models/ENG**: Includes trained machine learning models notebooks for the English version
-- **models/FR**: Includes trained machine learning models notebooks for the French version
+- **models/**: Includes trained machine learning models notebooks
 - **streamlit/**: Contains Streamlit app files for interactive data exploration and visualization.
 - **requirements.txt**: Lists all Python packages and dependencies required to run the project.
 - **README.md**: This file provides an overview and instructions for the project.
@@ -38,8 +36,8 @@ To replicate the analysis and run the code on your local machine, it is recommen
    ```
 
 3. **Run the notebooks :**
-   Open the provided Jupyter Notebooks in the **vizualisations/ENG/** or **vizualisations/FR/** directory to explore the analysis.
-   Open the provided Jupyter Notebooks in the **Models/ENG/** or **Models/FR/** directory to explore the analysis.
+   Open the provided Jupyter Notebooks in the **vizualisations/** directory to explore the analysis.
+   Open the provided Jupyter Notebooks in the **Models/** directory to explore the analysis.
 
 4. **Run the Streamlit app:**
    Navigate to the `streamlit/` directory and run the app using:
