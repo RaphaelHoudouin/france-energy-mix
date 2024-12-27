@@ -18,6 +18,26 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from scipy.stats import zscore
 
 # Cache data loading
+import pandas as pd
+import streamlit as st
+import requests
+
+# Function to download file from Google Drive
+def download_file_from_google_drive(url, destination_path):
+    file_id = url.split('/')[-2]  # Extract file ID from the URL
+    download_url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    response = requests.get(download_url, stream=True)
+    
+    if response.status_code == 200:
+        with open(destination_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=128):
+                f.write(chunk)
+        return destination_path
+    else:
+        st.error("Failed to download the file.")
+        return None
+
+# Streamlit cache function for loading the dataset
 @st.cache_data
 def load_data(file_path):
     try:
@@ -25,6 +45,19 @@ def load_data(file_path):
     except FileNotFoundError:
         st.error("File not found. Please upload the correct dataset.")
         return None
+
+# URL of the file from Google Drive
+file_url = "https://drive.google.com/drive/folders/1RwomGz_w1xV-OM6U8ePraUCuF5pDxexo"
+
+# Download the file to a local destination
+destination = "data.csv"  # Change this to the desired destination file name
+download_file_from_google_drive(file_url, destination)
+
+# Load the data using the local file
+data = load_data(destination)
+
+if data is not None:
+    st.write(data)
 
 @st.cache_data
 def download_region_geojson():
