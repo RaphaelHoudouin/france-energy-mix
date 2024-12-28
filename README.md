@@ -12,9 +12,8 @@ The study utilizes datasets at the regional, departmental, and commune levels. I
 The data for this analysis was retrieved on **December 10, 2024**.
 
 ## Project Structure
-- **vizualisations/**: Includes notebooks of the data vizualisations.
 - **data/**: Stores the data files (e.g., CSV files, datasets).
-- **models/**: Includes trained machine learning models notebooks
+- **notebooks/**: Includes data vizualisations notebook and trained machine learning models notebook
 - **streamlit/**: Contains Streamlit app files for interactive data exploration and visualization.
 - **requirements.txt**: Lists all Python packages and dependencies required to run the project.
 - **README.md**: This file provides an overview and instructions for the project.
