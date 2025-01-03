@@ -47,7 +47,7 @@ def load_data(file_path):
         return None
 
 # URL of the file from Google Drive
-file_url = "https://drive.google.com/drive/folders/1RwomGz_w1xV-OM6U8ePraUCuF5pDxexo"
+file_url = "https://drive.google.com/file/d/1Wy67T8qeUu1xVtxynuoZcXaNYxzvcdG8/view?usp=sharing"
 
 # Download the file to a local destination
 destination = "data.csv"  # Change this to the desired destination file name
