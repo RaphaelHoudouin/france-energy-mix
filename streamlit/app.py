@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -16,11 +15,6 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from scipy.stats import zscore
-
-# Cache data loading
-import pandas as pd
-import streamlit as st
-import requests
 
 # Function to download file from Google Drive
 def download_file_from_google_drive(url, destination_path):
@@ -44,6 +38,9 @@ def load_data(file_path):
         return pd.read_csv(file_path, sep=";")
     except FileNotFoundError:
         st.error("File not found. Please upload the correct dataset.")
+        return None
+    except pd.errors.ParserError:
+        st.error("There was an issue parsing the file. Ensure it's in the correct CSV format.")
         return None
 
 # URL of the file from Google Drive
