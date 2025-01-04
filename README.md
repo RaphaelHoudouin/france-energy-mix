@@ -52,4 +52,7 @@ To replicate the analysis and run the code on your local machine, it is recommen
 - Provide interactive dashboards for data exploration using Streamlit.
 
 ## Contact
-For any questions or feedback, please contact the project maintainer: **rhoudouin** (GitHub: https://github.com/rhoudouin).
+For any questions or feedback, please contact the project maintainer: **RaphaelHoudouin**.  
+GitHub: [RaphaelHoudouin](https://github.com/RaphaelHoudouin)
+
+
